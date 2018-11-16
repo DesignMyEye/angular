@@ -1,0 +1,76 @@
+<nav class="navbar navbar-expand-lg fixed-top nav-down" color-on-scroll="500">
+    <div class="container">
+        <div class="navbar-translate">
+          
+<button type="button" class="btn btn-link" style="color:white" (click)="open(Register, '')">
+       Argentina/Brazil   </button> 
+<ng-template #Register let-c="close" let-d="dismiss">
+    <div class="modal-header modal-register no-border-header text-center">
+        <button type="button" class="close" (click)="d('Cross click')">&times;</button>
+        <h6 class="text-muted">Bienvenidoo</h6>
+        <h3 class="modal-title">Grupo Cimaz</h3>
+        <p>Cree su cuenta y obtenga beneficios</p>
+    </div>
+    <div class="modal-body">
+        <button  [routerLink]="['/presentation']"  (click)="d('Cross click')" class="btn btn-block btn-default btn-info"> Cimaz Argentina</button>
+        <button  [routerLink]="['/examples/landing']"  (click)="d('Cross click')"  class="btn btn-block btn-success btn-warning">Cimaz Brasil</button>
+    </div>
+    <div class="modal-footer no-border-footer"><br><br><br></div>
+</ng-template>
+
+            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/components']">Trayectoria</a>
+                </li>
+                <div ngbDropdown class="nav-item dropdown">
+                    <div class="nav-link dropdown-toggle" ngbDropdownToggle>Ventas</div>
+                    <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right dropdown-danger">
+                        <a class="dropdown-item" [routerLink]="['/sections']" fragment="headers"><i class="far fa-hotel"></i>&nbsp; Casas</a>
+                        <a class="dropdown-item" [routerLink]="['/sections']" fragment="features"><i class="far fa-building"></i>&nbsp; Departamentos</a>
+                        <a class="dropdown-item" [routerLink]="['/sections']" fragment="blogs"><i class="far fa-hotel"></i>&nbsp; Lotes</a><!-- 
+                        <a class="dropdown-item" [routerLink]="['/sections']" fragment="teams"><i class="nc-icon nc-single-02"></i>&nbsp; Teams</a>
+                        <a class="dropdown-item" [routerLink]="['/sections']" fragment="projects"><i class="nc-icon nc-calendar-60"></i>&nbsp; Projects</a>
+                        <a class="dropdown-item" [routerLink]="['/sections']" fragment="pricing"><i class="nc-icon nc-money-coins"></i>&nbsp; Pricing</a>
+                        <a class="dropdown-item" [routerLink]="['/sections']" fragment="testimonials"><i class="nc-icon nc-badge"></i>&nbsp; Testimonials</a>
+                        <a class="dropdown-item" [routerLink]="['/sections']" fragment="contact-us"><i class="nc-icon nc-mobile"></i>&nbsp; Contacts</a> -->
+                    </div>
+                </div>
+                <div ngbDropdown class="nav-item dropdown">
+                    <div class="nav-link dropdown-toggle" ngbDropdownToggle>Alquileres</div>
+                    <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right dropdown-danger">
+                        <a class="dropdown-item" [routerLink]="['/examples/aboutus']"><i class="far fa-building"></i>&nbsp; Mensual</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/addproduct']"><i class="far fa-hotel"></i>&nbsp; Temporal</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/blogpost']"><i class="far fa-building"></i>>&nbsp; Anual</a><!-- 
+                        <a class="dropdown-item" [routerLink]="['/examples/blogposts']"><i class="nc-icon nc-bullet-list-67"></i>&nbsp; r</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/contactus']"><i class="nc-icon nc-mobile"></i>&nbsp; Contact Us</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/discover']"><i class="nc-icon nc-world-2"></i>&nbsp; Discover</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/ecommerce']"><i class="nc-icon nc-send"></i>&nbsp; Ecommerce</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/landing']"><i class="nc-icon nc-spaceship"></i>&nbsp; Landing</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/login']"><i class="nc-icon nc-lock-circle-open"></i>&nbsp; Login</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/productpage']"><i class="nc-icon nc-album-2"></i>&nbsp; Product Page</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/profile']"><i class="nc-icon nc-single-02"></i>&nbsp; Profile</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/register']"><i class="nc-icon nc-bookmark-2"></i>&nbsp; Register</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/search']"><i class="nc-icon nc-zoom-split"></i>&nbsp; Search</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/settings']"><i class="nc-icon nc-settings-gear-65"></i>&nbsp; Settings</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/twitter']"><i class="nc-icon nc-tie-bow"></i>&nbsp; Twitter</a> -->
+                    </div>
+                </div>
+                <li class="nav-item">
+                    <a class="btn btn-border btn-warning btn-block" href="#">
+                        <i class="nc-icon nc-bu"></i>Oportunidades
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

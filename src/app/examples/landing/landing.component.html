@@ -1,0 +1,163 @@
+<div class="wrapper">
+		<ngb-carousel>
+          	 <ng-template ngbSlide>
+	<div class="page-header section-dark" style="background-image: url('./assets/img/Camboriu/camboriu2.jpg')">
+		<div class="filter"></div> 
+		<div class="content-center">
+			<div class="container">
+					<div class="title-brand">
+						<div class="card">
+                    	 <div class="angular-logo" style="margin-bottom: -5%">
+                        <img src="./assets/img/bgcimaz.png" alt="" style="width: 200% ;  box-shadow: none">
+					</div>     
+				</div>  
+					<h1 class="presentation-title">Cimaz</h1>
+					<div class="type" style="
+					margin-top: 1%;
+					margin-right: 27%;
+				">Imóvies</div>	 
+				</div>
+			</div>
+		</div>
+		<h6 class="category category-absolute" style=" 
+		z-index: 2 !important
+	"> 
+			<a>
+				<img src="./assets/img/isologo.png" class="creative-tim-logo" style="width: 5%;margin-bottom: 1%;margin-right: -2%; box-shadow: none">
+			</a>Santa catharina  - Brazil
+		</h6>
+	</div> 
+</ng-template>   
+<ng-template ngbSlide>
+		<div class="page-header section-dark" style="background-image: url('./assets/img/Camboriu/c2.jpg')">
+			<div class ="filter"></div>
+			<div class="filter"></div>
+			<div class="content-center">
+                    <div class="container">
+                            <div class="title-brand">
+                                <div class="card">
+                                 <div class="angular-logo" style="margin-bottom: -5%">
+                                <img src="./assets/img/isologo.png" alt="" style="width: 160% ;  box-shadow: none">
+                                Cimaz
+                            </div>     
+                        </div>  
+                            <h1 class="presentation-title" style="font-size:20px;">Disfrute en familia</h1>
+                            <h1 class="presentation-title"  style="font-size:49px;">Departamentos en Camboriú</h1>
+
+                        </div>
+                    </div>
+				</div>
+			</div>  
+	</ng-template>  
+</ngb-carousel>
+<div class="subscribe-line subscribe-line-transparent" style="background-image: url('assets/img/bgsubs.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-sm-8">
+                <form class="">
+                    <div class="form-group">
+                        <input type="text" value="" class="form-control" placeholder="Ingrese su Email...">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <button type="button" class="btn btn-info btn-block btn-round">Subscribirme Ahora!</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section section-gray">
+		<div class="container">
+			<div class="row title-row"> 
+				<div class="col-md-4 ml-auto">
+					<div class="pull-right">
+						<span class="text-muted">Oportunidad Cimaz</span> <button class="btn btn-link"> <i class="fa fa-shopping-cart"></i> 0 Items</button>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-7 col-sm-6">
+
+					<div id="carousel" class="ml-auto mr-auto">
+						<div class="card page-carousel">
+							<ngb-carousel>
+								<ng-template ngbSlide>
+									<img class="d-block img-fluid" src="./assets/img/vcp/temp/2.jpg" alt="Awesome Item">
+									<div class="carousel-caption d-none d-md-block">
+										<p>Habitación</p>
+									</div>
+								</ng-template>
+								<ng-template ngbSlide>
+									<img class="d-block img-fluid" src="./assets/img/vcp/temp/3.jpg" alt="Awesome Item">
+									<div class="carousel-caption d-none d-md-block">
+										<p>Habitación</p>
+									</div>
+								</ng-template>
+								<ng-template ngbSlide>
+									<img class="d-block img-fluid" src="./assets/img/vcp/temp/4.jpg" alt="Awesome Item">
+									<div class="carousel-caption d-none d-md-block">
+										<p>Comedor, living</p>
+									</div>
+								</ng-template>
+								<ng-template ngbSlide>
+									<img class="d-block img-fluid" src="./assets/img/vcp/temp/6.jpg" alt="Awesome Item">
+									<div class="carousel-caption d-none d-md-block">
+										<p>Comedor, living</p>
+									</div>
+								</ng-template>
+								<ng-template ngbSlide>
+									<img class="d-block img-fluid" src="./assets/img/vcp/temp/7.jpg" alt="Awesome Item">
+									<div class="carousel-caption d-none d-md-block">
+										<p>Pileta</p>
+									</div>
+								</ng-template>
+								 
+							</ngb-carousel>
+						</div>
+					</div> <!-- end carousel -->
+
+				</div>
+				<div class="col-md-5 col-sm-6">
+					<h2>Alquiler Temporario</h2>
+					<h4 class="price"><strong>&euro; 2,900.00</strong></h4>
+					<hr />
+					<p>Departamentos a estrenar en pleno centro de Villa Carlos Paz, 3 amibentes con vista panoramica para apreciar todo el paisaje de la Villa.</p>
+					<span class="label label-warning shipping">Descuento por temporada completa</span>
+
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<label>Cantidad de Dias</label>
+							<div class="form-group">
+								<angular2-multiselect [data]="dropdownList" [(ngModel)]="selectedItems"
+									[settings]="dropdownSettings"
+									(onSelect)="onItemSelect($event)"
+									(onDeSelect)="OnItemDeSelect($event)"
+									(onSelectAll)="onSelectAll($event)"
+									(onDeSelectAll)="onDeSelectAll($event)">
+								</angular2-multiselect>
+						   </div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<label>Forma de pago</label>
+							<div class="form-group">
+								<angular2-multiselect [data]="dropdownList1" [(ngModel)]="selectedItems1"
+									[settings]="dropdownSettings1"
+									(onSelect)="onItemSelect($event)"
+									(onDeSelect)="OnItemDeSelect($event)"
+									(onSelectAll)="onSelectAll($event)"
+									(onDeSelectAll)="onDeSelectAll($event)">
+								</angular2-multiselect>
+						   </div>
+						</div>
+					</div>
+					<hr />
+					<div class="row">
+						<div class="col-md-7 offset-md-5 col-sm-8">
+							<button class="btn btn-default btn-block btn-round">Adquirir &nbsp;<i class="fa fa-chevron-right"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</div> 
+			</div>  
